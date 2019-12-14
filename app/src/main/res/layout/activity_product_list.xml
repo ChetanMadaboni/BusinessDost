@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductListActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add Products"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <ImageView
+        android:id="@+id/addproductphtoimageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/addphoto"
+        android:layout_gravity="center"
+        android:clickable="true"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productetryname_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/productentryname_edttxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Product Name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prdtdspt_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/prdtdscpt_edttxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Product Description"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prdtdsptvndr_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/prdtprffdvndr_edttxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Add Preferred Vendor Name"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notify When Less"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"/>
+        <SeekBar
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pdtlstsave_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SAVE"
+        android:background="@drawable/buttons"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+
+
+</LinearLayout>
